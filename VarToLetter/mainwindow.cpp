@@ -43,7 +43,7 @@ void MainWindow::on_pb_letterToVar_clicked()
 
     auto varMap{Conversions::getLetterListFromVars(ui->le_varList->text(),alphabet)};
 
-    auto newText{Conversions::get_eq_lettersToVars(ui->te_calc_var->toPlainText(),varMap)};
+    auto newText{Conversions::get_eq_lettersToVars(ui->te_calc_letter->toPlainText(),varMap)};
 
     ui->te_calc_var->setText(newText);
 }
